@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    height: 100vh; /* Preencher toda a altura da tela */
+}
+
+.container {
+    display: flex;
+    max-width: 100%; /* Alterado para preencher toda a largura da tela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+    height: 100vh; /* Definindo uma altura específica para a container */
+}
+
+.left-panel {
+    flex: 1;
+    width: 10%; /* Definir a largura desejada (10%) */
+    padding: 20px;
+    background-color: #2c3e50; /* Cor escura */
+    color: #fff;
+    text-align: left; /* Alinhar o texto à esquerda */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinhar à esquerda horizontalmente */
+}
+
+/* Estilo para centralizar o texto "NEW" */
+.center-text {
+    text-align: center;
+}
+
+.left-panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.left-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-panel ul li {
+    margin-bottom: 10px;
+}
+
+.left-panel ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.2s;
+}
+
+.left-panel ul li a:hover,
+.left-panel ul li a.active {
+    background-color: #34495e; /* Cor escura mais clara */
+}
+
+.right-panel {
+    flex: 9; /* Alterado para 9 para ocupar 90% da largura */
+    width: 90%; /* Definir a largura desejada (90%) */
+    padding: 20px;
+    background-color: #fff; /* Cor branca */
+    color: #333; /* Cor de texto mais escura */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Removido justify-content */
+}
